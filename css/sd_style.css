@@ -16,13 +16,13 @@ nav
 
 #header ul li a:hover
 {
-	background-color: #d2151b;
+	background-color: #d22533;
 	color: white;
 }
 
 .navbar-header
 {
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 }
 
 .navbar .container 
@@ -56,6 +56,52 @@ nav
 {
 	width: 100%;
 }
+
+#no1Img
+{
+	padding-top: 10px;
+	text-align: center;
+}
+
+#no1
+{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.desktopBadge
+{
+	padding-top: 20px;
+}
+
+#mobileBadge
+{
+	margin-top: 20px;
+}
+
+.badgeDes
+{
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.title
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#profile
+{
+	background-color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
 
 
 @media (max-width:768px){
