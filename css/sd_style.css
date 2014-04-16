@@ -87,23 +87,34 @@ nav
 	padding-bottom: 20px;
 }
 
+#clients
+{
+	text-align: center;
+}
+
 .title
 {
 	text-align: center;
 	font-weight: bold;
 	font-size: 30px;
+	margin-bottom: 20px;
 }
 
-#profile
+#profile, #clients
 {
-	background-color: black;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-
+.clientsImg img
+{
+	width: 90%;
+}
 
 
 @media (max-width:768px){
-	height: auto;
+	.clientsImg img
+	{
+		width: 50%;
+	}
 }
