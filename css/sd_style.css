@@ -1,0 +1,63 @@
+nav
+{
+	background-color: #FFF !important;	
+}
+
+#header
+{
+	background-color: #FFF;
+	height: 100%;
+}
+
+#header ul li a
+{
+	color: #434343;
+}
+
+#header ul li a:hover
+{
+	background-color: #d2151b;
+	color: white;
+}
+
+.navbar-header
+{
+	margin-top: 10px;
+}
+
+.navbar .container 
+{ 
+	/*height: 65px; */
+}
+
+.navbar-brand
+{
+	margin-top: 0px;
+	padding: 0px !important;
+}
+
+.navbar
+{
+	margin-bottom:0px !important;
+}
+
+#logo img
+{
+	padding-top: 3px;
+	width: 65px;
+}
+
+#banner
+{
+	margin-top: 0px;
+}
+
+#banner img
+{
+	width: 100%;
+}
+
+
+@media (max-width:768px){
+	height: auto;
+}

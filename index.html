@@ -21,42 +21,23 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar-example">
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="">Home</a></li>
-        <li><a href="">Profile</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Mobile Services</a></li>
-        <li><a href="">Industries</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="">Mobile Services</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
-<!--     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
       <div class="container">
-        <a class="navbar-brand" href="#">Brand</a>
+        <a id="logo" class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+        
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>  
+        </div>
 
-        <div class="navbar-example">
-          <ul class="nav nav-tabs navbar-right">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="header" class="collapse navbar-collapse">
+          <ul class="fullHeight nav navbar-nav navbar-right">
             <li><a href="">Home</a></li>
             <li><a href="">Profile</a></li>
             <li><a href="">About</a></li>
@@ -64,17 +45,26 @@
             <li><a href="">Industries</a></li>
             <li><a href="">News</a></li>
             <li><a href="">Mobile Services</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
-        </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="banner" class="row">
+      <div class="col-lg-12">
+        <img src="img/banner.jpg">
+      </div>
+    </div>
+
+    <div id="no1" class="row">
+      <div id="no1Img" class="col-lg-12">
 
       </div>
-    </nav> -->
-
-
-    <h1>Hello, world!</h1>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
