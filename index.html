@@ -115,9 +115,41 @@
       </div>
     </div>
 
+    <div id="awards" class="row">
+      <div class="title" class="col-lg-12">
+        Awards
+      </div>
+    </div>
+
+    <div id="contact" class="row">
+      <div class="title" class="col-lg-12">
+        Contact
+      </div>
+      <div id="map_canvas"></div>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var coords = new google.maps.LatLng(22.2914776, 114.21011820000001);
+        var map_options = {
+          center: new google.maps.LatLng(22.2914776, 114.21011820000001),
+          zoom: 17,
+
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+        var marker = new google.maps.Marker({map:map , position:coords});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
   </body>
 </html>

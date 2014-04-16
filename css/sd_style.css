@@ -100,15 +100,27 @@ nav
 	margin-bottom: 20px;
 }
 
-#profile, #clients
+#profile, #clients, #awards, #contact
 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
+#profile
+{
+	background-color: grey;
+}
+
 .clientsImg img
 {
 	width: 90%;
+}
+
+
+#map_canvas
+{
+    width: 100%;  
+    height: 500px;
 }
 
 
