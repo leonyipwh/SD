@@ -14,6 +14,11 @@
     <!-- REVOLUTION BANNER CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
 
+    <!-- Thumbnail -->
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+
 
 
   </head>
@@ -155,6 +160,35 @@
       <div class="title white" class="col-lg-12">
         Profile
       </div>
+      <div class="container">
+        <ul id="og-grid" class="og-grid">
+          <li>
+            <a href="https://itunes.apple.com/hk/app/id477364732?mt=8" data-android="#" data-largesrc="img/profile/1.png" data-title="Go Movie (Hong Kong)" data-description="Go Movie(香港電影) 透過華麗的程式介面,用戶可以第一時間時間透過手機購買UA香港及澳門的電影戲票。使您可以座在最佳位置欣賞每部好戲。用戶還可以對每部影片作出評價與留言。與一眾戲迷分享及交流。
+            <br>
+            Go Movie is a FANTASTIC and features rich movie app that allows you to easily purchase movie tickets of UA Cinemas in both Hong Kong and Macau.">
+              <!-- thumb image -->
+              <img src="img/profile/thumbs/1.png" alt="img01"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://itunes.apple.com/us/app/id477799382" data-android="#" data-largesrc="img/profile/2.png" data-title="Car King" data-description="好消息!宜家大家可以利用手機,24小時全天侯放售,搜尋及接收第一手與車有關的產品交易資訊。簡單到位的三個步驟便可輕易放賣全新或二手車盤、車位、汽車零件、車牌等等。<br>
+              放盤簡單,搵盤同樣簡單,網頁帶唔到俾你嘅便利同互動功能,宜家你可以係手機親身體驗,快啲Download來感受吓啦!
+              <br>
+              「車王」適合相關行業人士或私人放售出讓,例如各大車行/車場,地產/停車場車位放售,零件零售商或批發商,各類型汽車服務業。">
+              <!-- thumb image -->
+              <img src="img/profile/thumbs/2.png" alt="img02"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://itunes.apple.com/hk/app/caffe-habitu/id488677786?mt=8" data-android="#" data-largesrc="img/profile/3.png" data-title="caffè HABITŪ" data-description="HABITŪ E-Gifting - Sharing coffee, love, care and appreciation with Hong Kong’s community.<br> 
+              This app was designed to share your love and appreciation through a unique gifting experience featuring special functions designed to make it easier for you to purchase caffè HABITŪ’s coffee as well as sharing thoughts and gifts with your loved ones. <br>
+              It’s an easy to use, fun and unique application that allows you to connect on a whole different level and brings you closer to those around you. ">
+              <!-- thumb image -->
+              <img src="img/profile/thumbs/3.png" alt="img03"/>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
 
@@ -235,67 +269,80 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
-
+    <script src="js/grid.js"></script>
     <!-- jQuery REVOLUTION Slider  -->
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    
+    <!-- Thumbnail -->
+    <script>
+      $(function() {
+        Grid.init();
+
+
+      });
+    </script>
+
+    <!-- Banner -->
     <script type="text/javascript">
  
-   var tpj=jQuery;
-   tpj.noConflict();
-   tpj(document).ready(function() {
-      if (tpj.fn.cssOriginal!=undefined)
-      tpj.fn.css = tpj.fn.cssOriginal;
-      tpj('.banner').revolution({
-         delay:9000,
-         startwidth:1024,
-         startheight:350,
- 
-         onHoverStop:"on",
- 
-         thumbWidth:100,
-         thumbHeight:50,
-         thumbAmount:3,
- 
-         hideThumbs:0,
- 
-         navigationType:"none",
-         navigationArrows:"solo",
-         navigationStyle:"round",
-         navigationHAlign:"left",
-         navigationVAlign:"bottom",
-         navigationHOffset:30,
-         navigationVOffset:30,
- 
-         soloArrowLeftHalign:"left",
-         soloArrowLeftValign:"center",
-         soloArrowLeftHOffset:20,
-         soloArrowLeftVOffset:0,
- 
-         soloArrowRightHalign:"right",
-         soloArrowRightValign:"center",
-         soloArrowRightHOffset:20,
-         soloArrowRightVOffset:0,
- 
-         touchenabled:"on",
- 
-         stopAtSlide:-1,
-         stopAfterLoops:-1,
-         hideCaptionAtLimit:0,
-         hideAllCaptionAtLilmit:0,
-         hideSliderAtLimit:0,
- 
-         fullWidth:"on",
-         fullScreen:"off",
-         fullScreenOffsetContainer:"#topheader-to-offset",
- 
-         shadow:0
- 
-      });
- 
-   });
- 
-</script>
+       var tpj=jQuery;
+       // tpj.noConflict();
+       tpj(document).ready(function() {
+
+          if (tpj.fn.cssOriginal!=undefined)
+          tpj.fn.css = tpj.fn.cssOriginal;
+          tpj('.banner').revolution({
+             delay:9000,
+             startwidth:1024,
+             startheight:350,
+     
+             onHoverStop:"on",
+     
+             thumbWidth:100,
+             thumbHeight:50,
+             thumbAmount:3,
+     
+             hideThumbs:0,
+     
+             navigationType:"none",
+             navigationArrows:"solo",
+             navigationStyle:"round",
+             navigationHAlign:"left",
+             navigationVAlign:"bottom",
+             navigationHOffset:30,
+             navigationVOffset:30,
+     
+             soloArrowLeftHalign:"left",
+             soloArrowLeftValign:"center",
+             soloArrowLeftHOffset:20,
+             soloArrowLeftVOffset:0,
+     
+             soloArrowRightHalign:"right",
+             soloArrowRightValign:"center",
+             soloArrowRightHOffset:20,
+             soloArrowRightVOffset:0,
+     
+             touchenabled:"on",
+     
+             stopAtSlide:-1,
+             stopAfterLoops:-1,
+             hideCaptionAtLimit:0,
+             hideAllCaptionAtLilmit:0,
+             hideSliderAtLimit:0,
+     
+             fullWidth:"on",
+             fullScreen:"off",
+             fullScreenOffsetContainer:"#topheader-to-offset",
+     
+             shadow:0
+     
+          });
+     
+       });
+     
+    </script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
