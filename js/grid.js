@@ -502,7 +502,14 @@ var Grid = (function() {
 				};
 
 			this.calcHeight();
-			this.$previewEl.css( 'height', this.height );
+			if (winsize.height>800) 
+			{
+				this.$previewEl.css( 'height', 300 );
+			}else
+			{
+				this.$previewEl.css( 'height', this.height );
+			};
+			
 			this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
 
 			if( !support ) {
