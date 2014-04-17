@@ -502,10 +502,11 @@ var Grid = (function() {
 				};
 
 			this.calcHeight();
-			if (winsize.height>800) 
+			if (($window.height())>800) 
 			{
-				this.$previewEl.css( 'height', 300 );
-			}else
+				alert("larger");
+			}
+			else
 			{
 				this.$previewEl.css( 'height', this.height );
 			};
