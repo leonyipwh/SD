@@ -168,6 +168,11 @@ nav
 	font-size: 50px;
 }
 
+.og-expander
+{
+	width: 100%;
+}
+
 #about
 {
 	background-color: #e7e9e3;
