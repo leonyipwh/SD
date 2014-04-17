@@ -1,3 +1,29 @@
+@font-face
+{
+	font-family: sdFont;
+	src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+@font-face
+{
+	font-family: sdFont;
+	src: url(../fonts/MyriadPro-Bold.otf);
+	font-weight: bold;
+}
+
+@font-face
+{
+	font-family: titleFont;
+	src: url(../fonts/LeagueGothic-Regular.otf);
+}
+
+
+
+body
+{
+	font-family: sdFont !important;
+}
+
 nav
 {
 	background-color: #FFF !important;	
@@ -94,9 +120,10 @@ nav
 
 .title
 {
+	font-family: titleFont;
 	text-align: center;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 40px;
 	margin-bottom: 20px;
 }
 
@@ -142,6 +169,15 @@ nav
 	color:#aa1f2b;
 }
 
+h1
+{
+	font-family: titleFont !important;
+}
+
+p
+{
+	font-size: 16px;	
+}
 
 @media (max-width:768px){
 	.clientsImg img
