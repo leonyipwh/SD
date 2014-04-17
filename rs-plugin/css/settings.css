@@ -680,10 +680,10 @@ website:       http://www.themepunch.com
         height: 30px !important;
     }
     .tp-leftarrow.default{
-    	left: 8px!important;
+    	left: 20px!important;
     }
     .tp-rightarrow.default{
-    	right: 8px!important;
+    	right: 20px!important;
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) { 

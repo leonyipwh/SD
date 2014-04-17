@@ -11,13 +11,11 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+
   </head>
 
   <body data-spy="scroll" data-target=".navbar-example">
@@ -52,8 +50,69 @@
     </nav>
 
     <div id="banner" class="row">
-      <div class="col-lg-12">
-        <img src="img/banner.jpg">
+
+      <!-- <img src="img/banner.jpg"> -->
+      <div class="bannercontainer">
+        <div class="banner">
+          <ul>
+          <!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
+           
+            <!-- SLIDE -->
+            <li data-transition="fade" data-slotamount="10" data-masterspeed="600">
+              <!-- THE MAIN IMAGE IN THE SLIDE -->
+              <img src="img/banner/pakhin_bg.png" alt="slide" >
+          
+              <!-- Caption -->
+              <div class="caption heading fade fixedCaption"
+                data-x="100"
+                data-y="100"
+                data-speed="300"
+                data-start="600"
+                data-easing="easeOutExpo">
+                  <img src="img/banner/pakhin_name.png">
+              </div>
+              <!-- Caption -->
+              <div class="caption sfl"
+                data-x="100"
+                data-y="150"
+                data-speed="600"
+                data-start="1000"
+                data-easing="easeOutExpo">
+                  <img src="img/banner/pakhin_slogan.png">
+              </div>
+
+              <!-- Caption -->
+              <div class="caption fade"
+                data-x="420"
+                data-y="100"
+                data-speed="600"
+                data-start="1200"
+                data-easing="easeOutExpo">
+                  <img src="img/banner/pakhin_card.png">
+              </div>
+              
+              <!-- Caption -->
+              <div class="caption sfr visible-xs visible-sm"
+                data-x="680"
+                data-y="70"
+                data-speed="300"
+                data-start="1400"
+                data-easing="easeOutExpo">
+                <img src="img/banner/pakhin_phone.png">
+              </div>
+
+              <!-- Caption -->
+              <div class="caption sfr hidden-xs hidden-sm"
+                data-x="680"
+                data-y="20"
+                data-speed="300"
+                data-start="1400"
+                data-easing="easeOutExpo">
+                <img src="img/banner/pakhin_phoneLarge.png">
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -93,7 +152,7 @@
     </div>
 
     <div id="profile" class="row">
-      <div class="title" class="col-lg-12">
+      <div class="title white" class="col-lg-12">
         Profile
       </div>
     </div>
@@ -144,11 +203,71 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
+
+    <!-- jQuery REVOLUTION Slider  -->
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript">
+ 
+   var tpj=jQuery;
+   tpj.noConflict();
+   tpj(document).ready(function() {
+      if (tpj.fn.cssOriginal!=undefined)
+      tpj.fn.css = tpj.fn.cssOriginal;
+      tpj('.banner').revolution({
+         delay:9000,
+         startwidth:1024,
+         startheight:350,
+ 
+         onHoverStop:"on",
+ 
+         thumbWidth:100,
+         thumbHeight:50,
+         thumbAmount:3,
+ 
+         hideThumbs:0,
+ 
+         navigationType:"none",
+         navigationArrows:"solo",
+         navigationStyle:"round",
+         navigationHAlign:"left",
+         navigationVAlign:"bottom",
+         navigationHOffset:30,
+         navigationVOffset:30,
+ 
+         soloArrowLeftHalign:"left",
+         soloArrowLeftValign:"center",
+         soloArrowLeftHOffset:20,
+         soloArrowLeftVOffset:0,
+ 
+         soloArrowRightHalign:"right",
+         soloArrowRightValign:"center",
+         soloArrowRightHOffset:20,
+         soloArrowRightVOffset:0,
+ 
+         touchenabled:"on",
+ 
+         stopAtSlide:-1,
+         stopAfterLoops:-1,
+         hideCaptionAtLimit:0,
+         hideAllCaptionAtLilmit:0,
+         hideSliderAtLimit:0,
+ 
+         fullWidth:"on",
+         fullScreen:"off",
+         fullScreenOffsetContainer:"#topheader-to-offset",
+ 
+         shadow:0
+ 
+      });
+ 
+   });
+ 
+</script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
-
     <script>
       function initialize() {
         var map_canvas = document.getElementById('map_canvas');
@@ -163,7 +282,8 @@
         var marker = new google.maps.Marker({map:map , position:coords});
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-
     </script>
+
+
   </body>
 </html>

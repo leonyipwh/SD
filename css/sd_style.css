@@ -18,7 +18,6 @@
 }
 
 
-
 body
 {
 	font-family: sdFont !important;
@@ -83,6 +82,20 @@ nav
 	width: 100%;
 }
 
+.bannercontainer
+{
+	width:auto !important;
+	position:relative;
+	padding:0;
+	max-height:500px !important;
+	overflow:hidden !important;
+}
+
+.fixedCaption
+{
+	position: absolute;
+}
+
 #no1Img
 {
 	padding-top: 10px;
@@ -135,7 +148,13 @@ nav
 
 #profile
 {
-	background-color: grey;
+	background-image: url(../img/profileBg.jpg);
+	background-size: cover;
+}
+
+.white
+{
+	color: white;
 }
 
 .clientsImg img
