@@ -504,7 +504,7 @@ var Grid = (function() {
 			this.calcHeight();
 			if (($window.height())>800) 
 			{
-				alert("larger");
+				this.$previewEl.css( 'height', "300" );
 			}
 			else
 			{
