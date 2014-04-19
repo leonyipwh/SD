@@ -110,7 +110,7 @@ nav
 
 .desktopBadge
 {
-	width: 100%;
+	width: auto;
 	padding-top: 20px;
 }
 
@@ -209,6 +209,62 @@ nav
 	text-align: center;
 }
 
+#mobileServiceList
+{
+	text-align: center;
+}
+
+#mobileServiceList ul
+{
+	list-style: none;
+}
+
+.mobileServiceSelector
+{
+	margin-top: 14px;
+	margin-bottom: 14px;
+	text-transform: uppercase;
+}
+
+.mobileServiceSelector a
+{
+	cursor: pointer;
+	text-decoration: none !important;
+}
+
+.mobileServiceSelector a:hover
+{
+	background-color: #fd8b2f;
+	color: white;	
+	padding: 10px;
+}
+
+.mobileServiceSelector a.active
+{
+
+	padding: 10px;
+	background-color: #fd8b2f;
+	color: white;
+	text-decoration: none;
+}
+
+#mobileServiceImgContainer img
+{
+	width: 100%;
+	text-align: center;
+}
+
+.mobileServiceImg
+{
+	display: none;
+}
+
+.mobileServiceImg.active
+{
+	display: inline;
+}
+
+
 #profile
 {
 	background-image: url(../img/profileBg.jpg);
@@ -261,6 +317,14 @@ p
 	font-size: 16px;	
 }
 
+@media (max-width:1024px){
+	.desktopBadge
+	{
+		width: auto;
+	}
+
+}
+
 
 
 @media (max-width:768px){
@@ -272,6 +336,11 @@ p
 	.contactContent
 	{
 		padding-left: 30px !important;
+	}
+
+	.desktopBadge
+	{
+		width: auto;
 	}
 
 	#map_canvas

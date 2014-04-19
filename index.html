@@ -18,9 +18,6 @@
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/modernizr.custom.js"></script>
-
-
-
   </head>
 
   <body data-spy="scroll" data-target=".navbar-example">
@@ -250,9 +247,61 @@
           Mobile service
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4 col-md-4">
+            <div id="mobileServiceList">
+              <ul>
+                <li class="mobileServiceSelector">
+                  <a id="consultingService" class="active" onclick="msClick(this)">
+                    consulting Service
+                  </a>
+                  </li>
+                <li class="mobileServiceSelector">
+                  <a id="toolsTechnologies" onclick="msClick(this)">
+                    Tools &#38; Technologies
+                  </a>
+                </li>
+                <li class="mobileServiceSelector">
+                  <a id="paymentSolutions" onclick="msClick(this)">
+                    Payment solutions
+                  </a>
+                </li>
+                <li class="mobileServiceSelector">
+                  <a id="fulfillmentSolutions" onclick="msClick(this)">
+                    Fulfillment solutions
+                  </a>
+                </li>
+                <li class="mobileServiceSelector">
+                  <a id="uncompromiseCompliance" onclick="msClick(this)">
+                    uncompromise compliance
+                  </a>
+                </li>
+                <li class="mobileServiceSelector">
+                    <a id="alliedSolutionAndSecurity" onclick="msClick(this)">
+                      allied solution and security
+                    </a>
+                  </li>
+                <li class="mobileServiceSelector">
+                  <a id="operationSupports" onclick="msClick(this)">
+                    operation supports
+                  </a>
+                </li>
+                <li class="mobileServiceSelector">
+                    <a id="intergration" onclick="msClick(this)">
+                      intergration
+                    </a>
+                  </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-6">
+          <div id="mobileServiceImgContainer" class="col-lg-8 col-md-8">
+            <img id="consultingServiceImg" class="mobileServiceImg active" src="img/mobileService/img1.png">
+            <img id="toolsTechnologiesImg" class="mobileServiceImg" src="http://placehold.it/780x300&text=2">
+            <img id="paymentSolutionsImg" class="mobileServiceImg" src="http://placehold.it/780x300&text=3">
+            <img id="fulfillmentSolutionsImg" class="mobileServiceImg" src="http://placehold.it/780x300&text=4">
+            <img id="uncompromiseComplianceImg" class="mobileServiceImg" src="http://placehold.it/780x300&text=5">
+            <img id="alliedSolutionAndSecurityImg" class="mobileServiceImg" src="http://placehold.it/780x300&text=6">
+            <img id="operationSupportsImg" class="mobileServiceImg" src="http://placehold.it/780x300&text=7">
+            <img id="intergrationImg" class="mobileServiceImg" src="http://placehold.it/780x300&text=8">
           </div>
         </div>
       </div>
@@ -293,13 +342,28 @@
     <script>
       $(function() {
         Grid.init();
-
-
       });
     </script>
 
     <!-- Banner -->
     <script type="text/javascript">
+
+      function msClick(x)
+      {
+
+        $(".mobileServiceSelector").find('a').removeClass('active');
+        $(x).addClass('active');
+
+        $(".mobileServiceImg").removeClass('active');
+
+        var selectedid = $(x).attr('id')+"Img";
+
+        console.log(selectedid);
+
+        $('#'+selectedid).addClass('active');
+    
+      }
+
  
        var tpj=jQuery;
        // tpj.noConflict();
